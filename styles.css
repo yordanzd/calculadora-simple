@@ -1,0 +1,83 @@
+:root {
+    --fondo: #1c1c1e;
+    --boton-numero: #333333;
+    --boton-operador: #ff9500;
+    --boton-igual: #ff9500;
+    --texto: #ffffff;
+}
+
+body {
+    background-color: var(--fondo);
+}
+
+header {
+    color: var(--texto);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header p {
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.calculadora {
+    width: 80%;
+    margin: auto;
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.resultados {
+    background-color: azure;
+    border-radius: 10px;
+    border: 1px solid var(--fondo);
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.pantalla {
+    color: black;
+}
+
+.resultados h2 {
+    text-align: end;
+    font-size: 60px;
+    margin: auto;
+    color: black;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+button {
+    color: white;
+    font-size: 40px;
+    background-color: var(--boton-numero);
+    height: 80px;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: gold;
+}
+
+.operador {
+    background-color: var(--boton-operador);
+}
+
+.igual {
+    background-color: var(--boton-igual);
+    grid-column: span 2;
+}
